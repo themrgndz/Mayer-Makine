@@ -5,8 +5,8 @@ const Header = () => (
     <nav className="navbar navbar-expand-lg sticky-navbar">
       <div className="container">
         <a className="navbar-brand" href="/" style={{ textDecoration: 'none' }}>
-          <img src="./src/assets/img/logo/logo-light.png" className="logo-light" alt="logo" />
-          <img src="./src/assets/img/logo/logo-dark.svg" className="logo-dark" alt="logo" />
+          <img src="./src/assets/img/logo/1.svg" className="logo-light" alt="logo" />
+          <img src="./src/assets/img/logo/1.svg" className="logo-dark" alt="logo" />
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
           <span className="menu-lines"><span></span></span>

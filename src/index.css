@@ -15,7 +15,7 @@ body {
 }
 
 ::selection {
-  background-color: #ff5e14;
+  background-color: #B82132;
   color: #ffffff;
 }
 
@@ -1403,7 +1403,7 @@ h6 {
   position: relative;
   font-size: 14px;
   font-weight: 700;
-  width: 170px;
+  width: 100px;
   height: 50px;
   line-height: 48px;
   border-radius: 3px;
@@ -7561,7 +7561,7 @@ textarea.form-control {
 }
 
 .banner-1 .inner-padding {
-  padding: 130px 120px 130px 80px;
+  padding: 50px 45px 50px 30px;
 }
 
 .banner-1 .heading i {
@@ -7635,7 +7635,7 @@ textarea.form-control {
 
 @media only screen and (min-width: 1400px) {
   .banner-1 .inner-padding {
-    padding: 130px 120px 130px 100px;
+    padding: 50px 50px 50px 70px;
   }
 
   .banner-2 .inner-padding {
@@ -7832,7 +7832,15 @@ textarea.form-control {
 }
 
 .section-custom-bg {
-  background-image: url(./assets/img/bg/section-bg.svg);
+  background-image: url(./assets/img/bg/3.svg);
   background-repeat: no-repeat;
   background-position: bottom center;
+  background-size: cover;
+}
+
+/* Mobil cihazlar için */
+@media only screen and (max-width: 767px) {
+  .section-custom-bg {
+    background-size: cover;
+  }
 }

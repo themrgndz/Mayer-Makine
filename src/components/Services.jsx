@@ -10,11 +10,17 @@ const Services = () => (
               <h2 className="heading__title">Hizmetlerimiz</h2>
             </div>
             <ul className="list list-items list-items-white">
+              <li>CNC Köprülü Dik İşleme</li>
+              <li>CNC Borwerk</li>
+              <li>CNC Dik Torna</li>
               <li>CNC Dik İşleme</li>
               <li>CNC Yatay Torna</li>
               <li>Manuel Torna</li>
+              <li>Kaynaklı İmalat</li>
               <li>Çelik Konstrüksiyon İmalatı</li>
-              <li>CAD ve CAM ile Bilgisayar Destekli 3D Tasarım</li>
+              <li>Özel Makine İmalatı</li>
+              <li>Mühendislik ve Danışmanlık</li>
+              <li>CAD ve CAM le bilgisayar destekli 3D tasarım</li>
             </ul>
           </div>
         </div>

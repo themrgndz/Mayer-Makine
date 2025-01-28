@@ -13,11 +13,12 @@ const Certificates = () => (
               <h2 className="heading__title">Sertifikalarımız</h2>
             </div>
             <ul className="list-unstyled list-items list-items-white">
-              <li><a href="./src/assets/img/sertifikalar/ISO-9001.pdf" target="_blank" class="text-white">ISO-9001</a></li>
-              <li><a href="./src/assets/img/sertifikalar/ISO-10002.pdf" target="_blank" class="text-white">ISO-10002</a></li>
-              <li><a href="./src/assets/img/sertifikalar/ISO-14001.pdf" target="_blank" class="text-white">ISO-14001</a></li>
-              <li><a href="./src/assets/img/sertifikalar/ISO-31000.pdf" target="_blank" class="text-white">ISO-31000</a></li>
-              <li><a href="./src/assets/img/sertifikalar/ISO-45001.pdf" target="_blank" class="text-white">ISO-45001</a></li>
+              <li><a href="./src/assets/certificate/tesan9001.pdf" target="_blank" class="text-white">Tesan9001</a></li>
+              <li><a href="./src/assets/certificate/tesan10002.pdf" target="_blank" class="text-white">Tesan10002</a></li>
+              <li><a href="./src/assets/certificate/tesan14001.pdf" target="_blank" class="text-white">Tesan14001</a></li>
+              <li><a href="./src/assets/certificate/tesan31000.pdf" target="_blank" class="text-white">Tesan31000</a></li>
+              <li><a href="./src/assets/certificate/tesan3834.pdf" target="_blank" class="text-white">Tesan3834</a></li>
+              <li><a href="./src/assets/certificate/tesan45001.pdf" target="_blank" class="text-white">Tesan45001</a></li>
             </ul>
           </div>
         </div>
