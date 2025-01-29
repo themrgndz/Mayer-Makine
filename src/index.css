@@ -7810,21 +7810,18 @@ textarea.form-control {
   height: 620px;
 }
 
-/* Medium Size Screens */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   #map {
     height: 500px;
   }
 }
 
-/* Mobile Phones and tablets */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   #map {
     height: 400px;
   }
 }
 
-/* Extra Small Devices */
 @media only screen and (min-width: 320px) and (max-width: 575px) {
   #map {
     height: 300px;
@@ -7832,15 +7829,15 @@ textarea.form-control {
 }
 
 .section-custom-bg {
-  background-image: url(./assets/img/bg/3.svg);
+  background-image: url(./assets/img/bg/1.svg);
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-size: cover;
+  background-size: 30%;
 }
 
-/* Mobil cihazlar için */
-@media only screen and (max-width: 767px) {
+@media (max-width: 768px) {
   .section-custom-bg {
-    background-size: cover;
+    background-size: 70%;
   }
 }
+
