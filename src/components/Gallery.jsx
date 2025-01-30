@@ -133,6 +133,31 @@ const Gallery = () => {
           ))}
         </div>
       )}
+      <div className="container">
+      <Carousel prevLabel="Previous" nextLabel="Next" controls={true}>
+        <Carousel.Item>
+          <img className="d-block w-100" src="./src/assets/img/makine/1.jpg" alt="First slide" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src="./src/assets/img/makine/2.jpg" alt="Second slide" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src="./src/assets/img/makine/3.jpg" alt="Third slide" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src="./src/assets/img/makine/4.jpg" alt="Fourth slide" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src="./src/assets/img/makine/5.jpg" alt="Fifth slide" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src="./src/assets/img/makine/6.jpg" alt="Sixth slide" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src="./src/assets/img/makine/7.jpg" alt="Seventh slide" />
+        </Carousel.Item>
+      </Carousel>
+    </div>
     </section>
   );
 };

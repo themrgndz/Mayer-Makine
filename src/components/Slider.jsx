@@ -7,7 +7,6 @@ const Slider = () => (
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
@@ -43,19 +42,6 @@ const Slider = () => (
                 <div className="col-xl-10">
                   <div className="slide__content">
                     <h2 className="slide__title">Manuel Torna</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="carousel-item">
-          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('./src/assets/img/sliders/4.jpg')", backgroundSize: "cover", backgroundPosition: "center center"}}>
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-10">
-                  <div className="slide__content">
-                    <h2 className="slide__title">Çelik Konstrüksiyon İmalatı</h2>
                   </div>
                 </div>
               </div>

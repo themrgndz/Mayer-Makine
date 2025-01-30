@@ -17,7 +17,6 @@ const Services = () => (
               <li>CNC Yatay Torna</li>
               <li>Manuel Torna</li>
               <li>Kaynaklı İmalat</li>
-              <li>Çelik Konstrüksiyon İmalatı</li>
               <li>Özel Makine İmalatı</li>
               <li>Mühendislik ve Danışmanlık</li>
               <li>CAD ve CAM le bilgisayar destekli 3D tasarım</li>
