@@ -5,7 +5,7 @@ const Certificates = () => (
     <div className="container-fluid col-padding-0">
       <div className="row">
         <div className="col-lg-6 d-none d-sm-block background-banner bg-overlay">
-          <div className="bg-img"><img src="./src/assets/img/banners/6.jpg" alt="background" style={{pointerEvents: 'none'}} /></div>
+          <div className="bg-img"><img src="./src/assets/img/banners/6.png" alt="background" style={{pointerEvents: 'none'}} /></div>
         </div>
         <div className="col-lg-6 bg-theme">
           <div className="inner-padding">

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Card, Modal, Carousel } from 'react-bootstrap';
+import { Card, Modal, Carousel, Button } from 'react-bootstrap';
 import '../assets/css/Gallery.css';
 
 const Gallery = () => {
-  const images = [...[...Array(20)].map((_, index) => ({ src: `./src/assets/img/galeri/${index + 1}.jpg` }))];
+  const images = [...[...Array(20)].map((_, index) => ({ src: `./src/assets/img/galeri/${index + 1}.jpeg` }))];
   const videos = [
     { src: './src/assets/img/video/1.mp4' },
     { src: './src/assets/img/video/2.mp4' },
@@ -22,8 +22,61 @@ const Gallery = () => {
   };
 
   return (
-    <section id="galeri" className="projects projects-grid projects-grid-layout2 section-custom-bg">
-      <div className="row justify-content-md-center">
+    <section className="projects projects-grid projects-grid-layout2 section-custom-bg">
+      <div className="container">
+        <Carousel prevLabel="Zurück" nextLabel="Weiter" controls={true}>
+          <Carousel.Item>
+            <img className="d-block w-100" src="./src/assets/img/makine/1.png" alt="Erstes Bild" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="./src/assets/img/makine/2.png" alt="Zweites Bild" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="./src/assets/img/makine/3.png" alt="Drittes Bild" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="./src/assets/img/makine/4.png" alt="Viertes Bild" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="./src/assets/img/makine/5.png" alt="Fünftes Bild" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="./src/assets/img/makine/6.png" alt="Sechstes Bild" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="./src/assets/img/makine/7.png" alt="Siebtes Bild" />
+          </Carousel.Item>
+        </Carousel>
+      </div>
+
+      <div id='Katalog' className="container mb-4 d-flex justify-content-center">
+        <Card className="text-center shadow-lg p-4 mb-5 bg-white rounded" style={{ maxWidth: '500px', border: '2px solid #007bff' }}>
+          <Card.Body>
+            <h3 className="mb-3 text-primary">📘 Katalog</h3>
+            <p className="text-muted" style={{ fontSize: '1.1rem' }}>
+              Sie können unseren Katalog einsehen, um unsere Produkte und Dienstleistungen zu entdecken.
+            </p>
+            <Button
+              variant="primary"
+              href="./src/assets/certificate/Katolog.pdf"
+              target="_blank"
+              className="px-4"
+              style={{
+                fontSize: '1rem',
+                fontWeight: 'bold',
+                borderRadius: '8px',
+                transition: '0.3s',
+              }}
+              onMouseEnter={(e) => (e.target.style.backgroundColor = '#0056b3')}
+              onMouseLeave={(e) => (e.target.style.backgroundColor = '#007bff')}
+            >
+              Anzeigen
+            </Button>
+          </Card.Body>
+        </Card>
+      </div>
+
+      <div id="galeri" className="row justify-content-md-center">
         <div className="col-12 text-center mb-5">
           <h2 className="text-uppercase">Fotos</h2>
         </div>
@@ -47,7 +100,7 @@ const Gallery = () => {
                       <img
                         src={image.src}
                         className="d-block w-100"
-                        alt={`Galerie Bild ${slideIndex * 8 + index + 1}`}
+                        alt={`Galeriebild ${slideIndex * 8 + index + 1}`}
                         style={{
                           height: '150px',
                           objectFit: 'cover',
@@ -61,6 +114,7 @@ const Gallery = () => {
           </Carousel>
         </div>
       </div>
+
       <div className="row justify-content-md-center">
         <div className="col-12 text-center mb-5">
           <h2 className="text-uppercase">Videos</h2>
@@ -90,74 +144,6 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <Modal show={showModal} onHide={handleCloseModal} centered size="lg">
-        <Modal.Body>
-          <Carousel activeIndex={modalIndex} onSelect={(selectedIndex) => setModalIndex(selectedIndex)}>
-            {images.map((image, index) => (
-              <Carousel.Item key={index}>
-                <img
-                  src={image.src}
-                  alt={`Galerie Bild ${index + 1}`}
-                  style={{
-                    width: '100%',
-                    height: 'auto',
-                    objectFit: 'contain',
-                    maxWidth: '90vw',
-                    maxHeight: '90vh',
-                  }}
-                />
-              </Carousel.Item>
-            ))}
-          </Carousel>
-        </Modal.Body>
-      </Modal>
-      {showModal && (
-        <div className="thumbnail-container fixed-bottom bg-light py-2 d-flex justify-content-center">
-          {images.map((image, index) => (
-            <img
-              key={index}
-              src={image.src}
-              alt={`Thumbnail ${index + 1}`}
-              className={`thumbnail-img ${index === modalIndex ? 'active' : ''}`}
-              onClick={() => setModalIndex(index)}
-              style={{
-                width: '50px',
-                height: '50px',
-                margin: '5px',
-                cursor: 'pointer',
-                objectFit: 'cover',
-                borderRadius: '5px',
-                border: index === modalIndex ? '2px solid blue' : '1px solid gray',
-              }}
-            />
-          ))}
-        </div>
-      )}
-      <div className="container">
-      <Carousel prevLabel="Zurück" nextLabel="Weiter" controls={true}>
-        <Carousel.Item>
-          <img className="d-block w-100" src="./src/assets/img/makine/1.jpg" alt="Erste Folie" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src="./src/assets/img/makine/2.jpg" alt="Zweite Folie" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src="./src/assets/img/makine/3.jpg" alt="Dritte Folie" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src="./src/assets/img/makine/4.jpg" alt="Vierte Folie" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src="./src/assets/img/makine/5.jpg" alt="Fünfte Folie" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src="./src/assets/img/makine/6.jpg" alt="Sechste Folie" />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src="./src/assets/img/makine/7.jpg" alt="Siebte Folie" />
-        </Carousel.Item>
-      </Carousel>
-    </div>
     </section>
   );
 };

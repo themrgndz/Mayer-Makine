@@ -7841,3 +7841,6 @@ textarea.form-control {
   }
 }
 
+#hakkimizda, #hizmetlerimiz, #sertifikalarimiz, #Katalog, #galeri {
+  padding-top: 100px;
+}

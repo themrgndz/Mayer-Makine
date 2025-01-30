@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Card, Modal, Carousel } from 'react-bootstrap';
+import { Card, Modal, Carousel, Button } from 'react-bootstrap';
 import '../assets/css/Gallery.css';
 
 const Gallery = () => {
-  const images = [...[...Array(20)].map((_, index) => ({ src: `./src/assets/img/galeri/${index + 1}.jpg` }))];
+  const images = [...[...Array(20)].map((_, index) => ({ src: `./src/assets/img/galeri/${index + 1}.jpeg` }))];
   const videos = [
     { src: './src/assets/img/video/1.mp4' },
     { src: './src/assets/img/video/2.mp4' },
@@ -22,8 +22,61 @@ const Gallery = () => {
   };
 
   return (
-    <section id="gallery" className="projects projects-grid projects-grid-layout2 section-custom-bg">
-      <div className="row justify-content-md-center">
+    <section className="projects projects-grid projects-grid-layout2 section-custom-bg">
+      <div className="container">
+        <Carousel prevLabel="Previous" nextLabel="Next" controls={true}>
+          <Carousel.Item>
+            <img className="d-block w-100" src="./src/assets/img/makine/1.png" alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="./src/assets/img/makine/2.png" alt="Second slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="./src/assets/img/makine/3.png" alt="Third slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="./src/assets/img/makine/4.png" alt="Fourth slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="./src/assets/img/makine/5.png" alt="Fifth slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="./src/assets/img/makine/6.png" alt="Sixth slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100" src="./src/assets/img/makine/7.png" alt="Seventh slide" />
+          </Carousel.Item>
+        </Carousel>
+      </div>
+
+      <div id='Katalog' className="container mb-4 d-flex justify-content-center">
+        <Card className="text-center shadow-lg p-4 mb-5 bg-white rounded" style={{ maxWidth: '500px', border: '2px solid #007bff' }}>
+          <Card.Body>
+            <h3 className="mb-3 text-primary">📘 Catalog</h3>
+            <p className="text-muted" style={{ fontSize: '1.1rem' }}>
+              You can view our catalog to explore our products and services.
+            </p>
+            <Button
+              variant="primary"
+              href="./src/assets/certificate/Katolog.pdf"
+              target="_blank"
+              className="px-4"
+              style={{
+                fontSize: '1rem',
+                fontWeight: 'bold',
+                borderRadius: '8px',
+                transition: '0.3s',
+              }}
+              onMouseEnter={(e) => (e.target.style.backgroundColor = '#0056b3')}
+              onMouseLeave={(e) => (e.target.style.backgroundColor = '#007bff')}
+            >
+              View
+            </Button>
+          </Card.Body>
+        </Card>
+      </div>
+
+      <div id="galeri" className="row justify-content-md-center">
         <div className="col-12 text-center mb-5">
           <h2 className="text-uppercase">Photos</h2>
         </div>
@@ -61,6 +114,7 @@ const Gallery = () => {
           </Carousel>
         </div>
       </div>
+
       <div className="row justify-content-md-center">
         <div className="col-12 text-center mb-5">
           <h2 className="text-uppercase">Videos</h2>
@@ -89,74 +143,6 @@ const Gallery = () => {
             ))}
           </div>
         </div>
-      </div>
-      <Modal show={showModal} onHide={handleCloseModal} centered size="lg">
-        <Modal.Body>
-          <Carousel activeIndex={modalIndex} onSelect={(selectedIndex) => setModalIndex(selectedIndex)}>
-            {images.map((image, index) => (
-              <Carousel.Item key={index}>
-                <img
-                  src={image.src}
-                  alt={`Gallery Image ${index + 1}`}
-                  style={{
-                    width: '100%',
-                    height: 'auto',
-                    objectFit: 'contain',
-                    maxWidth: '90vw',
-                    maxHeight: '90vh',
-                  }}
-                />
-              </Carousel.Item>
-            ))}
-          </Carousel>
-        </Modal.Body>
-      </Modal>
-      {showModal && (
-        <div className="thumbnail-container fixed-bottom bg-light py-2 d-flex justify-content-center">
-          {images.map((image, index) => (
-            <img
-              key={index}
-              src={image.src}
-              alt={`Thumbnail ${index + 1}`}
-              className={`thumbnail-img ${index === modalIndex ? 'active' : ''}`}
-              onClick={() => setModalIndex(index)}
-              style={{
-                width: '50px',
-                height: '50px',
-                margin: '5px',
-                cursor: 'pointer',
-                objectFit: 'cover',
-                borderRadius: '5px',
-                border: index === modalIndex ? '2px solid blue' : '1px solid gray',
-              }}
-            />
-          ))}
-        </div>
-      )}
-      <div className="container">
-        <Carousel prevLabel="Previous" nextLabel="Next" controls={true}>
-          <Carousel.Item>
-            <img className="d-block w-100" src="./src/assets/img/makine/1.jpg" alt="First slide" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src="./src/assets/img/makine/2.jpg" alt="Second slide" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src="./src/assets/img/makine/3.jpg" alt="Third slide" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src="./src/assets/img/makine/4.jpg" alt="Fourth slide" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src="./src/assets/img/makine/5.jpg" alt="Fifth slide" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src="./src/assets/img/makine/6.jpg" alt="Sixth slide" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100" src="./src/assets/img/makine/7.jpg" alt="Seventh slide" />
-          </Carousel.Item>
-        </Carousel>
       </div>
     </section>
   );

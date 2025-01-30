@@ -23,6 +23,9 @@ const Header = () => (
               <a href="#sertifikalarimiz" className="nav__item-link" style={{ textDecoration: 'none' }}>Unsere Zertifikate</a>
             </li>
             <li className="nav__item">
+              <a href="#Katalog" className="nav__item-link" style={{ textDecoration: 'none' }}>Katalog</a>
+            </li>
+            <li className="nav__item">
               <a href="#galeri" className="nav__item-link" style={{ textDecoration: 'none' }}>Galerie</a>
             </li>
             <li className="nav__item">

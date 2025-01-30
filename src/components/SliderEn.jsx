@@ -7,15 +7,17 @@ const Slider = () => (
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <div className="slide-item align-v-h bg-overlay" style={{ backgroundImage: "url('./src/assets/img/sliders/1.jpg')", backgroundSize: "cover", backgroundPosition: "center center" }}>
+          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('./src/assets/img/sliders/1.png')", backgroundSize: "cover", backgroundPosition: "center center"}}>
             <div className="container">
               <div className="row">
                 <div className="col-xl-10">
                   <div className="slide__content">
-                    <h2 className="slide__title">CNC Vertical Milling</h2>
+                    <h2 className="slide__title">CNC Vertical Machining</h2>
                   </div>
                 </div>
               </div>
@@ -23,7 +25,33 @@ const Slider = () => (
           </div>
         </div>
         <div className="carousel-item">
-          <div className="slide-item align-v-h bg-overlay" style={{ backgroundImage: "url('./src/assets/img/sliders/2.jpg')", backgroundSize: "cover", backgroundPosition: "center center" }}>
+          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('./src/assets/img/sliders/2.png')", backgroundSize: "cover", backgroundPosition: "center center"}}>
+            <div className="container">
+              <div className="row">
+                <div className="col-xl-10">
+                  <div className="slide__content">
+                    <h2 className="slide__title">CNC Vertical Lathe</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('./src/assets/img/sliders/3.png')", backgroundSize: "cover", backgroundPosition: "center center"}}>
+            <div className="container">
+              <div className="row">
+                <div className="col-xl-10">
+                  <div className="slide__content">
+                    <h2 className="slide__title">CNC Boring Mill</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="carousel-item">
+          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('./src/assets/img/sliders/4.png')", backgroundSize: "cover", backgroundPosition: "center center"}}>
             <div className="container">
               <div className="row">
                 <div className="col-xl-10">
@@ -36,12 +64,12 @@ const Slider = () => (
           </div>
         </div>
         <div className="carousel-item">
-          <div className="slide-item align-v-h bg-overlay" style={{ backgroundImage: "url('./src/assets/img/sliders/3.jpg')", backgroundSize: "cover", backgroundPosition: "center center" }}>
+          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('./src/assets/img/sliders/5.png')", backgroundSize: "cover", backgroundPosition: "center center"}}>
             <div className="container">
               <div className="row">
                 <div className="col-xl-10">
                   <div className="slide__content">
-                    <h2 className="slide__title">Manual Lathe</h2>
+                    <h2 className="slide__title">Welded Manufacturing</h2>
                   </div>
                 </div>
               </div>
@@ -58,7 +86,8 @@ const Slider = () => (
         <span className="visually-hidden">Next</span>
       </button>
     </div>
-    <div id="hakkimizda"></div>
+    <div id='hakkimizda'>
+    </div>
   </section>
 );
 

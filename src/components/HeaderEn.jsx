@@ -23,7 +23,10 @@ const Header = () => (
               <a href="#our-certificates" className="nav__item-link" style={{ textDecoration: 'none' }}>Our Certificates</a>
             </li>
             <li className="nav__item">
-              <a href="#gallery" className="nav__item-link" style={{ textDecoration: 'none' }}>Gallery</a>
+              <a href="#Katalog" className="nav__item-link" style={{ textDecoration: 'none' }}>Catalog</a>
+            </li>
+            <li className="nav__item">
+              <a href="#galeri" className="nav__item-link" style={{ textDecoration: 'none' }}>Gallery</a>
             </li>
             <li className="nav__item">
               <a href="#contact" className="nav__item-link" style={{ textDecoration: 'none' }}>Contact</a>
