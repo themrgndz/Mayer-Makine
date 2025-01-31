@@ -43,6 +43,7 @@ const Gallery = () => {
   return (
     <section className="projects projects-grid projects-grid-layout2 section-custom-bg">
       <div className="container">
+        <h2 className='text-uppercase text-center'>- Our Machine Fleet -</h2>
         <Carousel prevLabel="Previous" nextLabel="Next" controls={true}>
           {[...Array(7)].map((_, i) => (
             <Carousel.Item key={i}>
