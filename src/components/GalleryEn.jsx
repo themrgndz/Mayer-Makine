@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'; 
 import { Card, Modal, Carousel, Button } from 'react-bootstrap';
 import '../assets/css/Gallery.css';
 
@@ -7,6 +7,8 @@ const Gallery = () => {
   const videos = [
     { src: './src/assets/img/video/1.mp4' },
     { src: './src/assets/img/video/2.mp4' },
+    { src: './src/assets/img/video/3.mp4' },
+    { src: './src/assets/img/video/4.mp4' },
   ];
 
   const [showModal, setShowModal] = useState(false);
@@ -41,32 +43,33 @@ const Gallery = () => {
   return (
     <section className="projects projects-grid projects-grid-layout2 section-custom-bg">
       <div className="container">
-        <Carousel prevLabel="Zurück" nextLabel="Weiter" controls={true}>
+        <Carousel prevLabel="Previous" nextLabel="Next" controls={true}>
           {[...Array(7)].map((_, i) => (
             <Carousel.Item key={i}>
-              <img className="d-block w-100" src={`./src/assets/img/machine/${i + 1}.png`} alt={`Slide ${i + 1}`} />
+              <img className="d-block w-100" src={`./src/assets/img/makine/${i + 1}.png`} alt={`Slide ${i + 1}`} />
             </Carousel.Item>
           ))}
         </Carousel>
       </div>
 
-      <div id="Catalog" className="container mb-4 d-flex justify-content-center">
+      <div id="Katalog" className="container mb-4 d-flex justify-content-center">
         <Card className="text-center shadow-lg p-4 mb-5 bg-white rounded" style={{ maxWidth: '500px', border: '2px solid #121c45' }}>
           <Card.Body>
-            <h3 className="mb-3 text-primary">📘 Katalog</h3>
-            <p className="text-muted" style={{ fontSize: '1.1rem' }}>
-              Sie können unseren Katalog einsehen, um unsere Produkte und Dienstleistungen zu entdecken.
+            <h3 className="mb-3" style={{ color: '#121c45' }}>Catalog</h3>
+            <p className="text-muted" style={{ fontSize: '1.1rem', color: '#121c45' }}>
+              You can view our catalog to explore our products and services.
             </p>
-            <Button variant="primary" href="./src/assets/certificate/Catalog.pdf" target="_blank" className="px-4">
-              Anzeigen
+            <Button href="./src/assets/certificate/Katolog.pdf" target="_blank" className="px-4" style={{ backgroundColor: '#121c45', borderColor: '#121c45' }}>
+              View
             </Button>
           </Card.Body>
         </Card>
       </div>
 
-      <div id="gallery" className="row justify-content-md-center">
+
+      <div id="galeri" className="row justify-content-md-center">
         <div className="col-12 text-center mb-5">
-          <h2 className="text-uppercase">Fotos</h2>
+          <h2 className="text-uppercase">Photos</h2>
         </div>
         <div className="col-12 text-center py-4">
           <Carousel interval={null} indicators={false} className="gallery-slider">
@@ -80,7 +83,7 @@ const Gallery = () => {
                       style={{ width: '150px', cursor: 'pointer', borderRadius: '10px', overflow: 'hidden' }}
                       onClick={() => handleImageClick(slideIndex * 8 + index)}
                     >
-                      <img src={image.src} className="d-block w-100" alt={`Galerie Bild ${slideIndex * 8 + index + 1}`} style={{ height: '150px', objectFit: 'cover' }} />
+                      <img src={image.src} className="d-block w-100" alt={`Gallery Image ${slideIndex * 8 + index + 1}`} style={{ height: '150px', objectFit: 'cover' }} />
                     </Card>
                   ))}
                 </div>
@@ -113,7 +116,7 @@ const Gallery = () => {
           <Carousel activeIndex={modalIndex} onSelect={(selectedIndex) => setModalIndex(selectedIndex)}>
             {images.map((image, index) => (
               <Carousel.Item key={index}>
-                <img src={image.src} alt={`Galerie Bild ${index + 1}`} style={{ width: '100%', height: 'auto', objectFit: 'contain', maxWidth: '90vw', maxHeight: '90vh' }} />
+                <img src={image.src} alt={`Gallery Image ${index + 1}`} style={{ width: '100%', height: 'auto', objectFit: 'contain', maxWidth: '90vw', maxHeight: '90vh' }} />
               </Carousel.Item>
             ))}
           </Carousel>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'; 
 import { Card, Modal, Carousel, Button } from 'react-bootstrap';
 import '../assets/css/Gallery.css';
 
@@ -7,6 +7,8 @@ const Gallery = () => {
   const videos = [
     { src: './src/assets/img/video/1.mp4' },
     { src: './src/assets/img/video/2.mp4' },
+    { src: './src/assets/img/video/3.mp4' },
+    { src: './src/assets/img/video/4.mp4' },
   ];
 
   const [showModal, setShowModal] = useState(false);
@@ -53,16 +55,17 @@ const Gallery = () => {
       <div id="Katalog" className="container mb-4 d-flex justify-content-center">
         <Card className="text-center shadow-lg p-4 mb-5 bg-white rounded" style={{ maxWidth: '500px', border: '2px solid #121c45' }}>
           <Card.Body>
-            <h3 className="mb-3 text-primary">📘 Katalog</h3>
-            <p className="text-muted" style={{ fontSize: '1.1rem' }}>
+            <h3 className="mb-3" style={{ color: '#121c45' }}>Katalog</h3>
+            <p className="text-muted" style={{ fontSize: '1.1rem', color: '#121c45' }}>
               Ürün ve hizmetlerimizi keşfetmek için kataloğumuzu görüntüleyebilirsiniz.
             </p>
-            <Button variant="primary" href="./src/assets/certificate/Katolog.pdf" target="_blank" className="px-4">
+            <Button href="./src/assets/certificate/Katolog.pdf" target="_blank" className="px-4" style={{ backgroundColor: '#121c45', borderColor: '#121c45' }}>
               Görüntüle
             </Button>
           </Card.Body>
         </Card>
       </div>
+
 
       <div id="galeri" className="row justify-content-md-center">
         <div className="col-12 text-center mb-5">
