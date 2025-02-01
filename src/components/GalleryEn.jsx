@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'; 
 import { Card, Modal, Carousel, Button } from 'react-bootstrap';
-import '../assets/css/Gallery.css';
+import './gallery.css';
 
 const Gallery = () => {
-  const images = [...[...Array(20)].map((_, index) => ({ src: `./src/assets/img/galeri/${index + 1}.jpeg` }))];
+  const images = [...[...Array(20)].map((_, index) => ({ src: `/assets/img/galeri/${index + 1}.jpeg` }))];
   const videos = [
-    { src: './src/assets/img/video/1.mp4' },
-    { src: './src/assets/img/video/2.mp4' },
-    { src: './src/assets/img/video/3.mp4' },
-    { src: './src/assets/img/video/4.mp4' },
+    { src: '/assets/img/video/1.mp4' },
+    { src: '/assets/img/video/2.mp4' },
+    { src: '/assets/img/video/3.mp4' },
+    { src: '/assets/img/video/4.mp4' },
   ];
 
   const [showModal, setShowModal] = useState(false);
@@ -47,7 +47,7 @@ const Gallery = () => {
         <Carousel prevLabel="Previous" nextLabel="Next" controls={true}>
           {[...Array(7)].map((_, i) => (
             <Carousel.Item key={i}>
-              <img className="d-block w-100" src={`./src/assets/img/makine/${i + 1}.png`} alt={`Slide ${i + 1}`} />
+              <img className="d-block w-100" src={`/assets/img/makine/${i + 1}.png`} alt={`Slide ${i + 1}`} />
             </Carousel.Item>
           ))}
         </Carousel>
@@ -60,7 +60,7 @@ const Gallery = () => {
             <p className="text-muted" style={{ fontSize: '1.1rem', color: '#121c45' }}>
               You can view our catalog to explore our products and services.
             </p>
-            <Button href="./src/assets/certificate/Katolog.pdf" target="_blank" className="px-4" style={{ backgroundColor: '#121c45', borderColor: '#121c45' }}>
+            <Button href="/assets/Certificate/Katolog.pdf" target="_blank" className="px-4" style={{ backgroundColor: '#121c45', borderColor: '#121c45' }}>
               View
             </Button>
           </Card.Body>

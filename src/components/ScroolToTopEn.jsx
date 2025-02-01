@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import { CSSTransition } from "react-transition-group";
-import "../assets/css/ScroolToTop.css";
+import "./ScroolToTop.css";
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Check the scroll position
   const toggleVisibility = () => {
     if (window.pageYOffset > 300) {
       setIsVisible(true);
@@ -15,7 +14,6 @@ const ScrollToTop = () => {
     }
   };
 
-  // Scroll the page to the top
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

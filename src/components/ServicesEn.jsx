@@ -24,7 +24,7 @@ const Services = () => (
           </div>
         </div>
         <div className="col-lg-6 d-none d-sm-block background-banner bg-overlay">
-          <div className="bg-img"><img src="./src/assets/img/banners/5.jpg" alt="background" style={{pointerEvents: 'none'}} /></div>
+          <div className="bg-img"><img src="/assets/img/banners/5.jpg" alt="background" style={{pointerEvents: 'none'}} /></div>
           <div className="overlay"></div>
         </div>
       </div>

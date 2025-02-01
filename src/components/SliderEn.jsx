@@ -12,7 +12,7 @@ const Slider = () => (
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('./src/assets/img/sliders/1.png')", backgroundSize: "cover", backgroundPosition: "center center"}}>
+          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('/assets/img/sliders/1.png')", backgroundSize: "cover", backgroundPosition: "center center"}}>
             <div className="container">
               <div className="row">
                 <div className="col-xl-10">
@@ -25,7 +25,7 @@ const Slider = () => (
           </div>
         </div>
         <div className="carousel-item">
-          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('./src/assets/img/sliders/2.png')", backgroundSize: "cover", backgroundPosition: "center center"}}>
+          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('/assets/img/sliders/2.png')", backgroundSize: "cover", backgroundPosition: "center center"}}>
             <div className="container">
               <div className="row">
                 <div className="col-xl-10">
@@ -38,7 +38,7 @@ const Slider = () => (
           </div>
         </div>
         <div className="carousel-item">
-          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('./src/assets/img/sliders/3.png')", backgroundSize: "cover", backgroundPosition: "center center"}}>
+          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('/assets/img/sliders/3.png')", backgroundSize: "cover", backgroundPosition: "center center"}}>
             <div className="container">
               <div className="row">
                 <div className="col-xl-10">
@@ -51,7 +51,7 @@ const Slider = () => (
           </div>
         </div>
         <div className="carousel-item">
-          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('./src/assets/img/sliders/4.png')", backgroundSize: "cover", backgroundPosition: "center center"}}>
+          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('/assets/img/sliders/4.png')", backgroundSize: "cover", backgroundPosition: "center center"}}>
             <div className="container">
               <div className="row">
                 <div className="col-xl-10">
@@ -64,7 +64,7 @@ const Slider = () => (
           </div>
         </div>
         <div className="carousel-item">
-          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('./src/assets/img/sliders/5.png')", backgroundSize: "cover", backgroundPosition: "center center"}}>
+          <div className="slide-item align-v-h bg-overlay" style={{backgroundImage: "url('/assets/img/sliders/5.png')", backgroundSize: "cover", backgroundPosition: "center center"}}>
             <div className="container">
               <div className="row">
                 <div className="col-xl-10">
