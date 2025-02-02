@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -40,7 +40,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/en" element={<div className="App">
+        <Route path="/en" element={<div className="App" key="en">
             <HeaderEn />
             <SliderEn />
             <AboutEn />
@@ -50,7 +50,7 @@ function App() {
             <FooterEn />
             <ScroolToTopEn />
           </div>} />
-        <Route path="/" element={<div className="App">
+        <Route path="/" element={<div className="App" key="tr">
             <Header />
             <Slider />
             <About />
@@ -60,7 +60,7 @@ function App() {
             <Footer />
             <ScroolToTop />
           </div>} />
-        <Route path="/de" element={<div className="App">
+        <Route path="/de" element={<div className="App" key="de">
             <HeaderDe />
             <SliderDe />
             <AboutDe />

@@ -60,7 +60,17 @@ const Gallery = () => {
             <p className="text-muted" style={{ fontSize: '1.1rem', color: '#121c45' }}>
               You can view our catalog to explore our products and services.
             </p>
-            <Button href="/assets/Certificate/Katolog.pdf" target="_blank" className="px-4" style={{ backgroundColor: '#121c45', borderColor: '#121c45' }}>
+            <Button 
+              href="/assets/Certificate/Katolog.pdf" 
+              target="_blank" 
+              className="px-4 w-100 text-nowrap text-center" 
+              style={{ 
+                backgroundColor: '#121c45', 
+                borderColor: '#121c45', 
+                fontSize: '1rem',
+                whiteSpace: 'nowrap'
+              }}
+            >
               View
             </Button>
           </Card.Body>
