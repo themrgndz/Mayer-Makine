@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Certificates = () => (
-  <section id="our-certificates" className="banner banner-2 p-0">
+  <section id="certificates" className="banner banner-2 p-0">
     <div className="container-fluid col-padding-0">
       <div className="row">
         <div className="col-lg-6 d-none d-sm-block background-banner bg-overlay">

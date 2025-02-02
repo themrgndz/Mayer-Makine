@@ -7829,7 +7829,7 @@ textarea.form-control {
 }
 
 .section-custom-bg {
-  background-image: url(./assets/img/bg/1.svg);
+  background-image: url(/assets/img/bg/1.svg);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 30%;

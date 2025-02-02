@@ -53,7 +53,7 @@ const Gallery = () => {
         </Carousel>
       </div>
 
-      <div id="Katalog" className="container mb-4 d-flex justify-content-center">
+      <div id="catalog" className="container mb-4 d-flex justify-content-center">
         <Card className="text-center shadow-lg p-4 mb-5 bg-white rounded" style={{ maxWidth: '500px', border: '2px solid #121c45' }}>
           <Card.Body>
             <h3 className="mb-3" style={{ color: '#121c45' }}>Catalog</h3>
@@ -78,7 +78,7 @@ const Gallery = () => {
       </div>
 
 
-      <div id="galeri" className="row justify-content-md-center">
+      <div id="gallery" className="row justify-content-md-center">
         <div className="col-12 text-center mb-5">
           <h2 className="text-uppercase">Photos</h2>
         </div>

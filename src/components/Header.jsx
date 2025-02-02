@@ -20,7 +20,6 @@ const Header = () => {
       <nav className="navbar navbar-expand-lg sticky-navbar">
         <div className="container">
           <a className="navbar-brand" href="/" style={{ textDecoration: 'none' }}>
-            <img src="/assets/img/logo/logo-light.png" className="logo-light" alt="logo" />
             <img src="/assets/img/logo/logo-dark.svg" className="logo-dark" alt="logo" />
           </a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,10 +46,10 @@ const Header = () => {
                 <a href="#iletisim" className="nav__item-link" onClick={handleScroll} style={{ textDecoration: 'none' }}>İletişim</a>
               </li>
               <li className="nav__item">
-              <a href="/en" className="nav__item-link" style={{ textDecoration: 'none' }}>EN</a>
+              <a href="#/en" className="nav__item-link" style={{ textDecoration: 'none' }}>EN</a>
             </li>
             <li className="nav__item">
-              <a href="/de" className="nav__item-link" style={{ textDecoration: 'none' }}>DE</a>
+              <a href="#/de" className="nav__item-link" style={{ textDecoration: 'none' }}>DE</a>
             </li>
             </ul>
           </div>

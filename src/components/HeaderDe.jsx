@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);  // Track the menu open/close state
   const navigate = useNavigate();
 
   const handleScroll = (event) => {
@@ -15,18 +16,28 @@ const Header = () => {
     }
   };
 
+  const toggleMenu = () => {
+    setMenuOpen(prevState => !prevState);
+  };
+
   return (
     <header id="header" className="header header-white header-full fixed-top">
       <nav className="navbar navbar-expand-lg sticky-navbar">
         <div className="container">
           <a className="navbar-brand" href="/" style={{ textDecoration: 'none' }}>
-            <img src="/assets/img/logo/logo-light.png" className="logo-light" alt="logo" />
-            <img src="/assets/img/logo/logo-dark.svg" className="logo-dark" alt="logo" />
+            <img src="/assets/img/logo/logo-dark.svg" className="logo" alt="logo" />
           </a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            className={`navbar-toggler ${menuOpen ? 'actived' : ''}`}
+            type="button"
+            onClick={toggleMenu}
+            aria-controls="mainNavigation"
+            aria-expanded={menuOpen ? 'true' : 'false'}
+            aria-label="Toggle navigation"
+          >
             <span className="menu-lines"><span></span></span>
           </button>
-          <div className="collapse navbar-collapse justify-content-end" id="mainNavigation">
+          <div className={`collapse navbar-collapse justify-content-end ${menuOpen ? 'menu-opened' : ''}`} id="mainNavigation">
             <ul className="navbar-nav">
               <li className="nav__item">
                 <a href="#hakkimizda" className="nav__item-link" onClick={handleScroll} style={{ textDecoration: 'none' }}>Über uns</a>
@@ -47,10 +58,10 @@ const Header = () => {
                 <a href="#iletisim" className="nav__item-link" onClick={handleScroll} style={{ textDecoration: 'none' }}>Kontakt</a>
               </li>
               <li className="nav__item">
-                <a href="/en" className="nav__item-link" style={{ textDecoration: 'none' }}>En</a>
+                <a href="#/en" className="nav__item-link" style={{ textDecoration: 'none' }}>EN</a>
               </li>
               <li className="nav__item">
-                <a href="/" className="nav__item-link" style={{ textDecoration: 'none' }}>Tr</a>
+                <a href="/" className="nav__item-link" style={{ textDecoration: 'none' }}>TR</a>
               </li>
             </ul>
           </div>

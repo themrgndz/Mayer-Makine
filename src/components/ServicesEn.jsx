@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Services = () => (
-  <section id="hizmetlerimiz" className="banner banner-1 p-0">
+  <section id="services" className="banner banner-1 p-0">
     <div className="container-fluid col-padding-0">
       <div className="row">
         <div className="col-lg-6 bg-theme">

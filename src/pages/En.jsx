@@ -12,8 +12,6 @@ import ScroolToTopEn from '../components/ScroolToTopEn';
 function En() {
   return (
     <>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700%7cPoppins:400,600,700&display=swap"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
       <div className="En">
         <HeaderEn />
         <SliderEn />
