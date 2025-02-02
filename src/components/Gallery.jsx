@@ -105,6 +105,7 @@ const Gallery = () => {
         </div>
       </div>
 
+      <div className='container'>
       <div className="row justify-content-md-center">
         <div className="col-12 text-center mb-5">
           <h2 className="text-uppercase">Videolar</h2>
@@ -120,6 +121,7 @@ const Gallery = () => {
             ))}
           </div>
         </div>
+      </div>
       </div>
 
       <Modal show={showModal} onHide={handleCloseModal} centered size="lg">
